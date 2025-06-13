@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب مياه روكاء</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="روكاء">
+            </a>
+            <nav>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-ul" id="nav-ul">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="quality.html">الجودة</a></li>
+                    <li><a href="production.html">الإنتاج</a></li>
+                    <li><a href="faq.html">الأسئلة</a></li>
+                    <li><a href="reviews.html">الآراء</a></li>
+                    <li><a href="order.html" class="active">الطلب</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم الطلب -->
+    <section class="order-section">
+        <div class="container">
+            <h2 class="section-title">طلب مياه روكاء</h2>
+            <div class="order-container">
+            
+                <div class="order-info">
+                    <h3>طرق التواصل</h3>
+                    <p>يمكنك أيضًا التواصل معنا مباشرة عبر:</p>
+                    <div class="contact-methods">
+                        <a href="https://wa.me/971586565920" class="contact-method whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>واتساب: +971 58 656 5920</span>
+                        </a>
+                        <a href="tel:+971586565920" class="contact-method phone">
+                            <i class="fas fa-phone"></i>
+                            <span>اتصال مباشر</span>
+                        </a>
+                    </div>
+                    <div class="delivery-info">
+                        <h3>معلومات التوصيل</h3>
+                        <p><i class="fas fa-truck"></i> التوصيل خلال 24-48 ساعة</p>
+                        <p><i class="fas fa-money-bill-wave"></i> الدفع عند الاستلام</p>
+                        <p><i class="fas fa-map-marker-alt"></i> نغطي جميع أنحاء الإمارات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- واتساب عائم -->
+    <a href="https://wa.me/971586565920" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- الفوتر -->
+     <footer>
+        <div class="container">
+         
+            <div class="footer-contact">
+                <h3>تواصل معنا</h3>
+               
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1CRKfzFBqU/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rokaawater?igsh=bG56ZmpuaXRtN2Zv&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/971586565920" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 روكاء للمياه المعبئة. جميع الحقوق محفوظة</p>
+
+‎‏<p>
+‎‏        <a href="https://wa.me/201025752676" target="_blank">© 2025 تم التطوير بواسطه مؤمن نصار</a>
+</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // معالجة نموذج الطلب
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // هنا يمكنك إضافة كود إرسال البيانات إلى الخادم
+            alert('تم استلام طلبك بنجاح! سوف نتصل بك قريبًا لتأكيد التفاصيل.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
